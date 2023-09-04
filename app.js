@@ -1,17 +1,18 @@
-function sortArray() {
-    let arrayNums = [1,40,-5,10,0]
+const myArray = [3,82,-3,50,0]
 
-    for (var i = 1; i < arrayNums.length; i++)
+function sortArray(array) {
 
-    for (var j = 0; j < i; j++)
+    for (let i = 1; i < array.length; i++)
 
-        if (arrayNums[i] < arrayNums[j]) {
+    for (let j = 0; j < i; j++)
 
-            var x = arrayNums[i];
-            arrayNums[i] = arrayNums[j];
-            arrayNums[j] = x;
+        if (array[i] < array[j]) {
+
+            let x = array[i];
+            array[i] = array[j];
+            array[j] = x;
         }
-    return arrayNums;
+    return array;
 }
 
-console.log(sortArray());
+console.log(sortArray(myArray));
